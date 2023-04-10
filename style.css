@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "SoDo Sans SemiBold", sans-serif;
 }
 
 .header {
@@ -20,9 +20,10 @@ body {
 
 .header-left div {
   margin-left: 15px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: 0.13rem;
 }
 
 .header-left div:hover {
@@ -138,7 +139,7 @@ body {
 }
 
 .padding-container {
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
 }
 
 .img-frappuccino {
@@ -170,6 +171,7 @@ body {
 .info-container {
   display: flex;
   margin-top: 50px;
+  justify-content: space-between;
 }
 
 .single-info {
@@ -178,7 +180,7 @@ body {
 }
 
 .single-info img {
-  width: 25vw;
+  width: 100%;
 }
 
 .single-info button {
@@ -198,8 +200,13 @@ body {
   background: rgba(152, 202, 218, 0.432);
 }
 
-.single-info h2 {
+.single-info > .info-text > h2 {
   font-weight: lighter;
+  color: black;
+}
+
+.single-info > .info-text {
+  padding: 0px 10px;
 }
 
 .single-info div {
@@ -315,5 +322,9 @@ hr {
 
   .single-info {
     box-shadow: none;
+  }
+
+  .single-info > .info-text {
+    padding: 0px;
   }
 }
